@@ -15,7 +15,7 @@ module.exports = {
                 console.log(err);
                 return res.status(500).json({
                     success: 0,
-                    message: "Database connection error!" + process.env.DB_HOST
+                    message: "Database connection error! " + process.env.DB_HOST + " " + err
                 });
             }
 
